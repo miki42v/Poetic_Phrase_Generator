@@ -1,48 +1,13 @@
-Poetic Quote Generator
-This is a simple web application that generates a poetic quote and a corresponding background image based on user-defined inputs. The application is a single-page HTML file with accompanying CSS and JavaScript files.
+✒️ Poetic Quote GeneratorThis project is a fun, personalized web application that generates a poetic quote and a background image using AI. You can customize it with your name, a favorite activity, and a favorite place to create a unique and visually appealing result.📊 FeaturesPersonalized Content: Generates a unique quote and background image based on your inputs.AI-Powered Creativity: Uses the OpenAI API to create poetic phrases in the witty style of Oscar Wilde.Dynamic Visuals: Fetches a random, high-quality background image from Unsplash that matches your favorite place.Simple Customization: Easily change the name, activity, and place directly in the index.js file.Adjustable AI: Control the creativity and randomness of the generated quote with a simple temperature setting.⚡ Technical StackFrontend: HTML5, CSS3, JavaScript (ES Modules)APIs:OpenAI API (for text generation)Unsplash API (for background images)Note: Both APIs are accessed via a Scrimba proxy.🚀 How to UseThis project runs directly in the browser without any installation steps.Download or Clone:Get a local copy of the project files.Customize Your Details:Open the index.js file and modify the following variables:// 1. Change the value of the variable to your name
+let name = "Your Name Here"
 
-Features
-Quote Generation: Fetches a poetic and witty quote from an API based on a user's favorite activity and place.
+// 2. Change the value of the variable to your favorite activity
+let favoriteActivity = "Reading"
 
-Image Generation: Fetches a random background image from the Unsplash API based on the user's favorite place.
+// 3. Assign the favoritePlace variable your favorite place
+let favoritePlace = "a cozy library"
 
-User Customization: Allows the user to easily change their name, favorite activity, favorite place, and the AI's "creativity temperature."
-
-Loading State: Displays a loading spinner and message while fetching data from the APIs.
-
-How to Use
-Open index.html in your web browser.
-
-Open index.js in a text editor.
-
-Modify the variables at the top of index.js to customize the output:
-
-name: Your name, which will be displayed as the quote's author.
-
-favoriteActivity: Your favorite activity (e.g., "Cooking", "Reading", "Hiking").
-
-favoritePlace: Your favorite place (e.g., "Cafe", "Forest", "Paris").
-
-temperature: A number between 0 and 1 to control the AI's output. A higher number results in more random and creative quotes.
-
-Optionally, replace the avatar.jpg file with a photo of yourself. Make sure the new file is also named avatar.jpg.
-
-File Structure
-index.html: The main HTML file that provides the structure for the web page.
-
-index.css: Contains the styles for the application, including fonts, layout, and visual effects.
-
-index.js: The main JavaScript file that imports the utils.js and calls the core function to generate content.
-
-utils.js: Contains the logic for fetching data from the APIs and updating the page content.
-
-avatar.jpg: The profile picture displayed on the page.
-
-loading.gif: The animated GIF used for the loading spinner.
-
-API Endpoints Used
-Unsplash API: Used to fetch random images based on a query.
-
-OpenAI API: Used to generate the poetic quotes.
-
-Note: This project uses APIs that may require an API key or have usage limits. The current code is set up for a specific environment and may need adjustments if run locally.
+// 4. Configure the AI by setting a temperature from 0 to 1
+let temperature = 0.7
+(Optional) Change the Avatar:Replace the avatar.jpg file with your own photo. Make sure the new file is also named avatar.jpg.View Your Page:Open the index.html file in your web browser to see the result!🤖 How the AI WorksThis application uses AI to generate creative text. Here’s a quick breakdown:Prompt Engineering: The application takes your favoriteActivity and favoritePlace from the index.js file.API Call: It combines these into a carefully crafted prompt that is sent to the OpenAI API. The prompt specifically asks the AI to generate a phrase in the "insightful, witty and satirical style of Oscar Wilde."Creative Output: The API processes this request and returns a unique, poetic phrase that is then displayed on the screen.This project was inspired by a Scrimba course.
+This project was inspired by a Scrimba course.
